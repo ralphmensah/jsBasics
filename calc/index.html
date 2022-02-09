@@ -6,26 +6,29 @@
     <title>jsBasics</title>
 </head>
 <body>
+  <p  id="item"></p>
     <div>
         <div>
-        <input name="one" type="button" value="1">
-       <input name="two" type="button" value="2">
-       <input name="three" type="button" value="3">
+        <input id="one" type="button" onclick="btnClicked(1)" value="1">
+       <input name="two" type="button" onclick="btnClicked(2)" value="2">
+       <input name="three" type="button" onclick="btnClicked(3)" value="3">
     </div>
       <div>
-        <input name="four" type="button" value="4">
-        <input name="five" type="button" value="5">
-        <input name="six" type="button" value="6">
+        <input name="four" type="button"onclick="btnClicked(4)" value="4">
+        <input name="five" type="button" onclick="btnClicked(5)" value="5">
+        <input name="six" type="button" onclick="btnClicked(6)" value="6">
       </div> 
        <div>
-        <input name="seven" type="button" value="7">
-        <input name="eight" type="button" value="8">
-        <input name="nine" type="button" value="9">
+        <input name="seven" type="button" onclick="btnClicked(7)" value="7">
+        <input name="eight" type="button" onclick="btnClicked(8)" value="8">
+        <input name="nine" type="button" onclick="btnClicked(9)" value="9">
        </div>
-       <input type="button" value="+">
+       <input type="button" onclick="btnClicked('+')" value="+">
+       <input type="button" onclick="btnClicked(0)" value="0">
+       <input type="button" onclick="calculateSum()" value="=">
        
     </div>
     
-
+<script src="script.js"></script>
 </body>
 </html>
